@@ -12,7 +12,7 @@ return {
   {
     "scalameta/nvim-metals",
     dependencies = {
-      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim",
     },
     keys = {
       {
@@ -45,8 +45,8 @@ return {
 
       metals_config.settings = {
         verboseCompilation = true,
-        showImplicitArguments = true,
-        showImplicitConversionsAndClasses = true,
+        showImplicitArguments = false,
+        showImplicitConversionsAndClasses = false,
         showInferredType = true,
         superMethodLensesEnabled = true,
         excludedPackages = {
